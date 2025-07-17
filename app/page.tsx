@@ -83,9 +83,9 @@ export default function Home() {
                         <Medal height={'40px'} color={'red'} />
                     </div>
                     <div className="final-right">
-                        <span>email: <span className="red">no@thankyou.com</span></span>
-                        <span>instagram: <span className="red">@sugarandspice.cats</span></span>
-                        <span>linkedin: <span className="red">some_acc_name</span></span>
+                        <span>email: <span className="red">hi@example.com</span></span>
+                        <span>instagram: <span className="red">@example_insta</span></span>
+                        <span>linkedin: <span className="red">example_linkedin</span></span>
                     </div>
                 </div>
             </main><div className="background-words">
