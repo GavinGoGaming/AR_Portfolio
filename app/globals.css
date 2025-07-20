@@ -127,6 +127,7 @@ nav {
 }
 
 .final-content {
+  position: relative;
   width: calc(100% - 200px);
   height: calc(30% - 100px);
   /* box-shadow:inset 0px 0px 0px 1px red; */
@@ -135,6 +136,15 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.final-content::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: calc(100% - 200px);
+  height: 2px;
+  border-radius: 1px;
+  background: #ffffff30;
 }
 
 .red {
@@ -253,16 +263,37 @@ nav {
     width: calc(100% - 40px);
     height: calc(30% - 60px);
     padding: 20px;
+    padding-top: 40px;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
+  }
+  .final-content::after {
+    display: none;
   }
   .final-right {
+    position: relative;
     gap: 20px;
     padding-bottom: 80px;
     text-align: center;
+  }
+  .final-right::after {
+    top: -25px;
+    width: 100%;
+    left: 0px;
+    height: 2px;
+    position: absolute;
+    background: #ffffff30;
+    content: "";
   }
 
   .background-word {
     display: none;
   }
+}
+
+.click {
+  cursor: pointer;
+}
+.click:hover {
+  color: #ff4040;
 }

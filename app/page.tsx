@@ -68,24 +68,27 @@ export default function Home() {
                 ></Lightbox>
                 <nav>
                     <Name />
-                    <div className="nav-buttons">
+                    {/* <div className="nav-buttons">
                         <button className="red-btn">BIO</button>
                         <button className="red-btn">PROD.</button>
                         <button className="red-btn">ART</button>
-                    </div>
+                    </div> */}
                 </nav>
                 <div className="main-content" ref={cardsRef}>
                     <Cards setOpen={setOpen} cards={cards} />
                 </div>
                 <div className="final-content">
-                    <div className="final-left">
-                        <Medal height={'40px'} color={'red'} />
-                        <Medal height={'40px'} color={'red'} />
+                    <div className="final-left" style={{cursor:'pointer'}} onClick={() => window.open('https://licc.uk/')}>
+                        <img src="/licc.png" style={{height:'80px',width:'auto'}} />
+                        <div style={{display:'flex',justifyContent:'center',flexDirection:'column'}}>
+                            <span style={{color:'#e8a319',fontWeight:'400'}}>LICC 2024</span>
+                            <span style={{fontWeight:'300'}}>SHORTLIST - Illustrate (Graphic)</span>
+                        </div>
                     </div>
                     <div className="final-right">
-                        <span>email: <span className="red">hi@example.com</span></span>
-                        <span>instagram: <span className="red">@example_insta</span></span>
-                        <span>linkedin: <span className="red">example_linkedin</span></span>
+                        <span>email: <span className="red click" onClick={()=>window.open('mailto:amanda.lee.rosenberg@gmail.com')}>amanda.lee.rosenberg@gmail.com</span></span>
+                        <span>instagram: <span className="red click" onClick={()=>window.open('https://instagram.com/@amandaphilia')}>@amandaphilia</span></span>
+                        {/* <span>linkedin: <span className="red">example_linkedin</span></span> */}
                     </div>
                 </div>
             </main><div className="background-words">
