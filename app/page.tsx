@@ -23,7 +23,7 @@ export default function Home() {
         animationDelay: `${Math.random() * 5}s`,
         key: Math.random(),
     })));
-    const cards = new Array(15).fill(null).map((_, index) => ({
+    const cards = new Array(13).fill(null).map((_, index) => ({
         id: index,
         title: `Image ${index + 1}`,
         url: `/cards/${index + 1}.png`,
